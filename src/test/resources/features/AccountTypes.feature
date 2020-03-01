@@ -11,7 +11,7 @@ Feature: Account types
     Given  the user logged in as a "sales manager"
     When the user navigates "Customers" "Accounts"
     Then the title should contains "Accounts - Customers"
-
+@regression
   Scenario: Store manager user
     Given  the user logged in as a "store manager"
     When the user navigates "Marketing" "Campaigns"

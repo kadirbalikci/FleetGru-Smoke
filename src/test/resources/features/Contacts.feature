@@ -1,3 +1,4 @@
+@regression
 Feature: Contacts Page
 
   Scenario: Default page number
