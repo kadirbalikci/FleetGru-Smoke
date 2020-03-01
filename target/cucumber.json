@@ -1,13 +1,13 @@
 [
   {
-    "line": 2,
+    "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-01-27T08:00:53.916Z",
+        "start_timestamp": "2020-02-27T18:54:17.312Z",
         "before": [
           {
             "result": {
-              "duration": 823400,
+              "duration": 998700,
               "status": "passed"
             },
             "match": {
@@ -16,17 +16,247 @@
           }
         ],
         "line": 4,
+        "name": "Driver user",
+        "description": "",
+        "id": "account-types;driver-user",
+        "after": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.WebDriverException: Unable to parse remote response: \u003c!DOCTYPE html\u003e\n\u003chtml lang\u003d\"en\"\u003e\n\u003chead\u003e\n  \u003cmeta charset\u003d\"UTF-8\"\u003e\n  \u003clink rel\u003d\"stylesheet\" type\u003d\"text/css\" href\u003d\"/assets/displayhelpservlet.css\" media\u003d\"all\"/\u003e\n  \u003clink href\u003d\"/assets/favicon.ico\" rel\u003d\"icon\" type\u003d\"image/x-icon\" /\u003e\n  \u003cscript src\u003d\"/assets/jquery-3.1.1.min.js\" type\u003d\"text/javascript\"\u003e\u003c/script\u003e\n  \u003cscript src\u003d\"/assets/displayhelpservlet.js\" type\u003d\"text/javascript\"\u003e\u003c/script\u003e\n  \u003cscript type\u003d\"text/javascript\"\u003e\n    var json \u003d Object.freeze(\u0027{\"consoleLink\": \"\\u002fgrid\\u002fconsole\",\"type\": \"Grid Hub\",\"class\": \"org.openqa.grid.web.servlet.DisplayHelpHandler$DisplayHelpServletConfig\",\"version\": \"3.141.59\"}\u0027);\n  \u003c/script\u003e\n\u003c/head\u003e\n\u003cbody\u003e\n\n\u003cdiv id\u003d\"content\"\u003e\n  \u003cdiv id\u003d\"help-heading\"\u003e\n    \u003ch1\u003e\u003cspan id\u003d\"logo\"\u003e\u003c/span\u003e\u003c/h1\u003e\n    \u003ch2\u003eSelenium \u003cspan class\u003d\"se-type\"\u003e\u003c/span\u003e\u0026nbsp;v.\u003cspan class\u003d\"se-version\"\u003e\u003c/span\u003e\u003c/h2\u003e\n  \u003c/div\u003e\n\n  \u003cdiv id\u003d\"content-body\"\u003e\n    \u003cp\u003e\n      Whoops! The URL specified routes to this help page.\n    \u003c/p\u003e\n    \u003cp\u003e\n      For more information about Selenium \u003cspan class\u003d\"se-type\"\u003e\u003c/span\u003e please see the\n      \u003ca class\u003d\"se-docs\"\u003edocs\u003c/a\u003e and/or visit the \u003ca class\u003d\"se-wiki\"\u003ewiki\u003c/a\u003e.\n      \u003cspan id\u003d\"console-item\"\u003e\n        Or perhaps you are looking for the Selenium \u003cspan class\u003d\"se-type\"\u003e\u003c/span\u003e \u003ca class\u003d\"se-console\"\u003econsole\u003c/a\u003e.\n      \u003c/span\u003e\n    \u003c/p\u003e\n    \u003cp\u003e\n      Happy Testing!\n    \u003c/p\u003e\n  \u003c/div\u003e\n\n  \u003cdiv\u003e\n    \u003cfooter id\u003d\"help-footer\"\u003e\n      Selenium is made possible through the efforts of our open source community, contributions from\n      these \u003ca href\u003d\"https://github.com/SeleniumHQ/selenium/blob/master/AUTHORS\"\u003epeople\u003c/a\u003e, and our\n      \u003ca href\u003d\"http://www.seleniumhq.org/sponsors/\"\u003esponsors\u003c/a\u003e.\n   \u003c/footer\u003e\n  \u003c/div\u003e\n \u003c/div\u003e\n\n\u003c/body\u003e\n\u003c/html\u003e\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:115)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:131)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:144)\r\n\tat com.vytrack.utilities.Driver.get(Driver.java:71)\r\n\tat com.vytrack.step_definitions.Hooks.tearDown(Hooks.java:26)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:567)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:26)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:20)\r\n\tat cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:65)\r\n\tat cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)\r\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:65)\r\n\tat cucumber.runner.TestStep.run(TestStep.java:50)\r\n\tat cucumber.runner.TestCase.run(TestCase.java:50)\r\n\tat cucumber.runner.Runner.runPickle(Runner.java:50)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:68)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:23)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:144)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:65)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:174)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:230)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)\r\nCaused by: org.openqa.selenium.json.JsonException: Unable to determine type from: \u003c. Last 1 characters read: \u003c\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-AKL693R\u0027, ip: \u0027192.168.0.105\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002712.0.2\u0027\nDriver info: driver.version: Driver\r\n\tat org.openqa.selenium.json.JsonInput.peek(JsonInput.java:122)\r\n\tat org.openqa.selenium.json.JsonTypeCoercer.lambda$null$6(JsonTypeCoercer.java:140)\r\n\tat org.openqa.selenium.json.JsonTypeCoercer.coerce(JsonTypeCoercer.java:126)\r\n\tat org.openqa.selenium.json.Json.toType(Json.java:69)\r\n\tat org.openqa.selenium.json.Json.toType(Json.java:55)\r\n\tat org.openqa.selenium.json.Json.toType(Json.java:50)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:112)\r\n\t... 44 more\r\n",
+              "duration": 16735200,
+              "status": "failed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.WebDriverException: Unable to parse remote response: \u003c!DOCTYPE html\u003e\n\u003chtml lang\u003d\"en\"\u003e\n\u003chead\u003e\n  \u003cmeta charset\u003d\"UTF-8\"\u003e\n  \u003clink rel\u003d\"stylesheet\" type\u003d\"text/css\" href\u003d\"/assets/displayhelpservlet.css\" media\u003d\"all\"/\u003e\n  \u003clink href\u003d\"/assets/favicon.ico\" rel\u003d\"icon\" type\u003d\"image/x-icon\" /\u003e\n  \u003cscript src\u003d\"/assets/jquery-3.1.1.min.js\" type\u003d\"text/javascript\"\u003e\u003c/script\u003e\n  \u003cscript src\u003d\"/assets/displayhelpservlet.js\" type\u003d\"text/javascript\"\u003e\u003c/script\u003e\n  \u003cscript type\u003d\"text/javascript\"\u003e\n    var json \u003d Object.freeze(\u0027{\"consoleLink\": \"\\u002fgrid\\u002fconsole\",\"type\": \"Grid Hub\",\"class\": \"org.openqa.grid.web.servlet.DisplayHelpHandler$DisplayHelpServletConfig\",\"version\": \"3.141.59\"}\u0027);\n  \u003c/script\u003e\n\u003c/head\u003e\n\u003cbody\u003e\n\n\u003cdiv id\u003d\"content\"\u003e\n  \u003cdiv id\u003d\"help-heading\"\u003e\n    \u003ch1\u003e\u003cspan id\u003d\"logo\"\u003e\u003c/span\u003e\u003c/h1\u003e\n    \u003ch2\u003eSelenium \u003cspan class\u003d\"se-type\"\u003e\u003c/span\u003e\u0026nbsp;v.\u003cspan class\u003d\"se-version\"\u003e\u003c/span\u003e\u003c/h2\u003e\n  \u003c/div\u003e\n\n  \u003cdiv id\u003d\"content-body\"\u003e\n    \u003cp\u003e\n      Whoops! The URL specified routes to this help page.\n    \u003c/p\u003e\n    \u003cp\u003e\n      For more information about Selenium \u003cspan class\u003d\"se-type\"\u003e\u003c/span\u003e please see the\n      \u003ca class\u003d\"se-docs\"\u003edocs\u003c/a\u003e and/or visit the \u003ca class\u003d\"se-wiki\"\u003ewiki\u003c/a\u003e.\n      \u003cspan id\u003d\"console-item\"\u003e\n        Or perhaps you are looking for the Selenium \u003cspan class\u003d\"se-type\"\u003e\u003c/span\u003e \u003ca class\u003d\"se-console\"\u003econsole\u003c/a\u003e.\n      \u003c/span\u003e\n    \u003c/p\u003e\n    \u003cp\u003e\n      Happy Testing!\n    \u003c/p\u003e\n  \u003c/div\u003e\n\n  \u003cdiv\u003e\n    \u003cfooter id\u003d\"help-footer\"\u003e\n      Selenium is made possible through the efforts of our open source community, contributions from\n      these \u003ca href\u003d\"https://github.com/SeleniumHQ/selenium/blob/master/AUTHORS\"\u003epeople\u003c/a\u003e, and our\n      \u003ca href\u003d\"http://www.seleniumhq.org/sponsors/\"\u003esponsors\u003c/a\u003e.\n   \u003c/footer\u003e\n  \u003c/div\u003e\n \u003c/div\u003e\n\n\u003c/body\u003e\n\u003c/html\u003e\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:115)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:131)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:144)\r\n\tat com.vytrack.utilities.Driver.get(Driver.java:71)\r\n\tat com.vytrack.step_definitions.LoginStepDefs.the_user_logged_in_as_a(LoginStepDefs.java:82)\r\n\tat ✽.the user logged in as a \"driver\"(file:src/test/resources/features/AccountTypes.feature:5)\r\nCaused by: org.openqa.selenium.json.JsonException: Unable to determine type from: \u003c. Last 1 characters read: \u003c\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-AKL693R\u0027, ip: \u0027192.168.0.105\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002712.0.2\u0027\nDriver info: driver.version: Driver\r\n\tat org.openqa.selenium.json.JsonInput.peek(JsonInput.java:122)\r\n\tat org.openqa.selenium.json.JsonTypeCoercer.lambda$null$6(JsonTypeCoercer.java:140)\r\n\tat org.openqa.selenium.json.JsonTypeCoercer.coerce(JsonTypeCoercer.java:126)\r\n\tat org.openqa.selenium.json.Json.toType(Json.java:69)\r\n\tat org.openqa.selenium.json.Json.toType(Json.java:55)\r\n\tat org.openqa.selenium.json.Json.toType(Json.java:50)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:112)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:131)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:144)\r\n\tat com.vytrack.utilities.Driver.get(Driver.java:71)\r\n\tat com.vytrack.step_definitions.LoginStepDefs.the_user_logged_in_as_a(LoginStepDefs.java:82)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:567)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:26)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:20)\r\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:57)\r\n\tat cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)\r\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:65)\r\n\tat cucumber.runner.TestStep.run(TestStep.java:50)\r\n\tat cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)\r\n\tat cucumber.runner.TestCase.run(TestCase.java:46)\r\n\tat cucumber.runner.Runner.runPickle(Runner.java:50)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:68)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:23)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:144)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:65)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:174)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:230)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)\r\n",
+              "duration": 975214400,
+              "status": "failed"
+            },
+            "line": 5,
+            "name": "the user logged in as a \"driver\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"driver\"",
+                  "offset": 24
+                }
+              ],
+              "location": "LoginStepDefs.the_user_logged_in_as_a(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 599200,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "the user navigates \"Activities\" \"Calendar Events\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Activities\"",
+                  "offset": 19
+                },
+                {
+                  "val": "\"Calendar Events\"",
+                  "offset": 32
+                }
+              ],
+              "location": "NavigationMenuStepDefs.the_user_navigates(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 502700,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "the title should contains \"Calendar Events - Activities\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Calendar Events - Activities\"",
+                  "offset": 26
+                }
+              ],
+              "location": "LoginStepDefs.the_title_should_contains(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-02-27T18:54:18.387Z",
+        "before": [
+          {
+            "result": {
+              "duration": 99800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "Sales manager user",
+        "description": "",
+        "id": "account-types;sales-manager-user",
+        "after": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.WebDriverException: Unable to parse remote response: \u003c!DOCTYPE html\u003e\n\u003chtml lang\u003d\"en\"\u003e\n\u003chead\u003e\n  \u003cmeta charset\u003d\"UTF-8\"\u003e\n  \u003clink rel\u003d\"stylesheet\" type\u003d\"text/css\" href\u003d\"/assets/displayhelpservlet.css\" media\u003d\"all\"/\u003e\n  \u003clink href\u003d\"/assets/favicon.ico\" rel\u003d\"icon\" type\u003d\"image/x-icon\" /\u003e\n  \u003cscript src\u003d\"/assets/jquery-3.1.1.min.js\" type\u003d\"text/javascript\"\u003e\u003c/script\u003e\n  \u003cscript src\u003d\"/assets/displayhelpservlet.js\" type\u003d\"text/javascript\"\u003e\u003c/script\u003e\n  \u003cscript type\u003d\"text/javascript\"\u003e\n    var json \u003d Object.freeze(\u0027{\"consoleLink\": \"\\u002fgrid\\u002fconsole\",\"type\": \"Grid Hub\",\"class\": \"org.openqa.grid.web.servlet.DisplayHelpHandler$DisplayHelpServletConfig\",\"version\": \"3.141.59\"}\u0027);\n  \u003c/script\u003e\n\u003c/head\u003e\n\u003cbody\u003e\n\n\u003cdiv id\u003d\"content\"\u003e\n  \u003cdiv id\u003d\"help-heading\"\u003e\n    \u003ch1\u003e\u003cspan id\u003d\"logo\"\u003e\u003c/span\u003e\u003c/h1\u003e\n    \u003ch2\u003eSelenium \u003cspan class\u003d\"se-type\"\u003e\u003c/span\u003e\u0026nbsp;v.\u003cspan class\u003d\"se-version\"\u003e\u003c/span\u003e\u003c/h2\u003e\n  \u003c/div\u003e\n\n  \u003cdiv id\u003d\"content-body\"\u003e\n    \u003cp\u003e\n      Whoops! The URL specified routes to this help page.\n    \u003c/p\u003e\n    \u003cp\u003e\n      For more information about Selenium \u003cspan class\u003d\"se-type\"\u003e\u003c/span\u003e please see the\n      \u003ca class\u003d\"se-docs\"\u003edocs\u003c/a\u003e and/or visit the \u003ca class\u003d\"se-wiki\"\u003ewiki\u003c/a\u003e.\n      \u003cspan id\u003d\"console-item\"\u003e\n        Or perhaps you are looking for the Selenium \u003cspan class\u003d\"se-type\"\u003e\u003c/span\u003e \u003ca class\u003d\"se-console\"\u003econsole\u003c/a\u003e.\n      \u003c/span\u003e\n    \u003c/p\u003e\n    \u003cp\u003e\n      Happy Testing!\n    \u003c/p\u003e\n  \u003c/div\u003e\n\n  \u003cdiv\u003e\n    \u003cfooter id\u003d\"help-footer\"\u003e\n      Selenium is made possible through the efforts of our open source community, contributions from\n      these \u003ca href\u003d\"https://github.com/SeleniumHQ/selenium/blob/master/AUTHORS\"\u003epeople\u003c/a\u003e, and our\n      \u003ca href\u003d\"http://www.seleniumhq.org/sponsors/\"\u003esponsors\u003c/a\u003e.\n   \u003c/footer\u003e\n  \u003c/div\u003e\n \u003c/div\u003e\n\n\u003c/body\u003e\n\u003c/html\u003e\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:115)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:131)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:144)\r\n\tat com.vytrack.utilities.Driver.get(Driver.java:71)\r\n\tat com.vytrack.step_definitions.Hooks.tearDown(Hooks.java:26)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:567)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:26)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:20)\r\n\tat cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:65)\r\n\tat cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)\r\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:65)\r\n\tat cucumber.runner.TestStep.run(TestStep.java:50)\r\n\tat cucumber.runner.TestCase.run(TestCase.java:50)\r\n\tat cucumber.runner.Runner.runPickle(Runner.java:50)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:68)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:23)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:144)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:65)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:174)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:230)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)\r\nCaused by: org.openqa.selenium.json.JsonException: Unable to determine type from: \u003c. Last 1 characters read: \u003c\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-AKL693R\u0027, ip: \u0027192.168.0.105\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002712.0.2\u0027\nDriver info: driver.version: Driver\r\n\tat org.openqa.selenium.json.JsonInput.peek(JsonInput.java:122)\r\n\tat org.openqa.selenium.json.JsonTypeCoercer.lambda$null$6(JsonTypeCoercer.java:140)\r\n\tat org.openqa.selenium.json.JsonTypeCoercer.coerce(JsonTypeCoercer.java:126)\r\n\tat org.openqa.selenium.json.Json.toType(Json.java:69)\r\n\tat org.openqa.selenium.json.Json.toType(Json.java:55)\r\n\tat org.openqa.selenium.json.Json.toType(Json.java:50)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:112)\r\n\t... 44 more\r\n",
+              "duration": 13121900,
+              "status": "failed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.WebDriverException: Unable to parse remote response: \u003c!DOCTYPE html\u003e\n\u003chtml lang\u003d\"en\"\u003e\n\u003chead\u003e\n  \u003cmeta charset\u003d\"UTF-8\"\u003e\n  \u003clink rel\u003d\"stylesheet\" type\u003d\"text/css\" href\u003d\"/assets/displayhelpservlet.css\" media\u003d\"all\"/\u003e\n  \u003clink href\u003d\"/assets/favicon.ico\" rel\u003d\"icon\" type\u003d\"image/x-icon\" /\u003e\n  \u003cscript src\u003d\"/assets/jquery-3.1.1.min.js\" type\u003d\"text/javascript\"\u003e\u003c/script\u003e\n  \u003cscript src\u003d\"/assets/displayhelpservlet.js\" type\u003d\"text/javascript\"\u003e\u003c/script\u003e\n  \u003cscript type\u003d\"text/javascript\"\u003e\n    var json \u003d Object.freeze(\u0027{\"consoleLink\": \"\\u002fgrid\\u002fconsole\",\"type\": \"Grid Hub\",\"class\": \"org.openqa.grid.web.servlet.DisplayHelpHandler$DisplayHelpServletConfig\",\"version\": \"3.141.59\"}\u0027);\n  \u003c/script\u003e\n\u003c/head\u003e\n\u003cbody\u003e\n\n\u003cdiv id\u003d\"content\"\u003e\n  \u003cdiv id\u003d\"help-heading\"\u003e\n    \u003ch1\u003e\u003cspan id\u003d\"logo\"\u003e\u003c/span\u003e\u003c/h1\u003e\n    \u003ch2\u003eSelenium \u003cspan class\u003d\"se-type\"\u003e\u003c/span\u003e\u0026nbsp;v.\u003cspan class\u003d\"se-version\"\u003e\u003c/span\u003e\u003c/h2\u003e\n  \u003c/div\u003e\n\n  \u003cdiv id\u003d\"content-body\"\u003e\n    \u003cp\u003e\n      Whoops! The URL specified routes to this help page.\n    \u003c/p\u003e\n    \u003cp\u003e\n      For more information about Selenium \u003cspan class\u003d\"se-type\"\u003e\u003c/span\u003e please see the\n      \u003ca class\u003d\"se-docs\"\u003edocs\u003c/a\u003e and/or visit the \u003ca class\u003d\"se-wiki\"\u003ewiki\u003c/a\u003e.\n      \u003cspan id\u003d\"console-item\"\u003e\n        Or perhaps you are looking for the Selenium \u003cspan class\u003d\"se-type\"\u003e\u003c/span\u003e \u003ca class\u003d\"se-console\"\u003econsole\u003c/a\u003e.\n      \u003c/span\u003e\n    \u003c/p\u003e\n    \u003cp\u003e\n      Happy Testing!\n    \u003c/p\u003e\n  \u003c/div\u003e\n\n  \u003cdiv\u003e\n    \u003cfooter id\u003d\"help-footer\"\u003e\n      Selenium is made possible through the efforts of our open source community, contributions from\n      these \u003ca href\u003d\"https://github.com/SeleniumHQ/selenium/blob/master/AUTHORS\"\u003epeople\u003c/a\u003e, and our\n      \u003ca href\u003d\"http://www.seleniumhq.org/sponsors/\"\u003esponsors\u003c/a\u003e.\n   \u003c/footer\u003e\n  \u003c/div\u003e\n \u003c/div\u003e\n\n\u003c/body\u003e\n\u003c/html\u003e\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:115)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:131)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:144)\r\n\tat com.vytrack.utilities.Driver.get(Driver.java:71)\r\n\tat com.vytrack.step_definitions.LoginStepDefs.the_user_logged_in_as_a(LoginStepDefs.java:82)\r\n\tat ✽.the user logged in as a \"sales manager\"(file:src/test/resources/features/AccountTypes.feature:11)\r\nCaused by: org.openqa.selenium.json.JsonException: Unable to determine type from: \u003c. Last 1 characters read: \u003c\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-AKL693R\u0027, ip: \u0027192.168.0.105\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002712.0.2\u0027\nDriver info: driver.version: Driver\r\n\tat org.openqa.selenium.json.JsonInput.peek(JsonInput.java:122)\r\n\tat org.openqa.selenium.json.JsonTypeCoercer.lambda$null$6(JsonTypeCoercer.java:140)\r\n\tat org.openqa.selenium.json.JsonTypeCoercer.coerce(JsonTypeCoercer.java:126)\r\n\tat org.openqa.selenium.json.Json.toType(Json.java:69)\r\n\tat org.openqa.selenium.json.Json.toType(Json.java:55)\r\n\tat org.openqa.selenium.json.Json.toType(Json.java:50)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:112)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:131)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:144)\r\n\tat com.vytrack.utilities.Driver.get(Driver.java:71)\r\n\tat com.vytrack.step_definitions.LoginStepDefs.the_user_logged_in_as_a(LoginStepDefs.java:82)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:567)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:26)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:20)\r\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:57)\r\n\tat cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)\r\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:65)\r\n\tat cucumber.runner.TestStep.run(TestStep.java:50)\r\n\tat cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)\r\n\tat cucumber.runner.TestCase.run(TestCase.java:46)\r\n\tat cucumber.runner.Runner.runPickle(Runner.java:50)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:68)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:23)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:144)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:65)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:174)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:230)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)\r\n",
+              "duration": 15088000,
+              "status": "failed"
+            },
+            "line": 11,
+            "name": "the user logged in as a \"sales manager\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"sales manager\"",
+                  "offset": 24
+                }
+              ],
+              "location": "LoginStepDefs.the_user_logged_in_as_a(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 371800,
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "the user navigates \"Customers\" \"Accounts\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Customers\"",
+                  "offset": 19
+                },
+                {
+                  "val": "\"Accounts\"",
+                  "offset": 31
+                }
+              ],
+              "location": "NavigationMenuStepDefs.the_user_navigates(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 294000,
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "the title should contains \"Accounts - Customers\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Accounts - Customers\"",
+                  "offset": 26
+                }
+              ],
+              "location": "LoginStepDefs.the_title_should_contains(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "name": "Account types",
+    "description": "  ​",
+    "id": "account-types",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/AccountTypes.feature",
+    "tags": []
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.WebDriverException: Unable to parse remote response: \u003c!DOCTYPE html\u003e\n\u003chtml lang\u003d\"en\"\u003e\n\u003chead\u003e\n  \u003cmeta charset\u003d\"UTF-8\"\u003e\n  \u003clink rel\u003d\"stylesheet\" type\u003d\"text/css\" href\u003d\"/assets/displayhelpservlet.css\" media\u003d\"all\"/\u003e\n  \u003clink href\u003d\"/assets/favicon.ico\" rel\u003d\"icon\" type\u003d\"image/x-icon\" /\u003e\n  \u003cscript src\u003d\"/assets/jquery-3.1.1.min.js\" type\u003d\"text/javascript\"\u003e\u003c/script\u003e\n  \u003cscript src\u003d\"/assets/displayhelpservlet.js\" type\u003d\"text/javascript\"\u003e\u003c/script\u003e\n  \u003cscript type\u003d\"text/javascript\"\u003e\n    var json \u003d Object.freeze(\u0027{\"consoleLink\": \"\\u002fgrid\\u002fconsole\",\"type\": \"Grid Hub\",\"class\": \"org.openqa.grid.web.servlet.DisplayHelpHandler$DisplayHelpServletConfig\",\"version\": \"3.141.59\"}\u0027);\n  \u003c/script\u003e\n\u003c/head\u003e\n\u003cbody\u003e\n\n\u003cdiv id\u003d\"content\"\u003e\n  \u003cdiv id\u003d\"help-heading\"\u003e\n    \u003ch1\u003e\u003cspan id\u003d\"logo\"\u003e\u003c/span\u003e\u003c/h1\u003e\n    \u003ch2\u003eSelenium \u003cspan class\u003d\"se-type\"\u003e\u003c/span\u003e\u0026nbsp;v.\u003cspan class\u003d\"se-version\"\u003e\u003c/span\u003e\u003c/h2\u003e\n  \u003c/div\u003e\n\n  \u003cdiv id\u003d\"content-body\"\u003e\n    \u003cp\u003e\n      Whoops! The URL specified routes to this help page.\n    \u003c/p\u003e\n    \u003cp\u003e\n      For more information about Selenium \u003cspan class\u003d\"se-type\"\u003e\u003c/span\u003e please see the\n      \u003ca class\u003d\"se-docs\"\u003edocs\u003c/a\u003e and/or visit the \u003ca class\u003d\"se-wiki\"\u003ewiki\u003c/a\u003e.\n      \u003cspan id\u003d\"console-item\"\u003e\n        Or perhaps you are looking for the Selenium \u003cspan class\u003d\"se-type\"\u003e\u003c/span\u003e \u003ca class\u003d\"se-console\"\u003econsole\u003c/a\u003e.\n      \u003c/span\u003e\n    \u003c/p\u003e\n    \u003cp\u003e\n      Happy Testing!\n    \u003c/p\u003e\n  \u003c/div\u003e\n\n  \u003cdiv\u003e\n    \u003cfooter id\u003d\"help-footer\"\u003e\n      Selenium is made possible through the efforts of our open source community, contributions from\n      these \u003ca href\u003d\"https://github.com/SeleniumHQ/selenium/blob/master/AUTHORS\"\u003epeople\u003c/a\u003e, and our\n      \u003ca href\u003d\"http://www.seleniumhq.org/sponsors/\"\u003esponsors\u003c/a\u003e.\n   \u003c/footer\u003e\n  \u003c/div\u003e\n \u003c/div\u003e\n\n\u003c/body\u003e\n\u003c/html\u003e\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:115)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:131)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:144)\r\n\tat com.vytrack.utilities.Driver.get(Driver.java:71)\r\n\tat com.vytrack.step_definitions.LoginStepDefs.the_user_is_on_the_login_page(LoginStepDefs.java:25)\r\n\tat ✽.the user is on the login page(file:src/test/resources/features/Login.feature:5)\r\nCaused by: org.openqa.selenium.json.JsonException: Unable to determine type from: \u003c. Last 1 characters read: \u003c\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-AKL693R\u0027, ip: \u0027192.168.0.105\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002712.0.2\u0027\nDriver info: driver.version: Driver\r\n\tat org.openqa.selenium.json.JsonInput.peek(JsonInput.java:122)\r\n\tat org.openqa.selenium.json.JsonTypeCoercer.lambda$null$6(JsonTypeCoercer.java:140)\r\n\tat org.openqa.selenium.json.JsonTypeCoercer.coerce(JsonTypeCoercer.java:126)\r\n\tat org.openqa.selenium.json.Json.toType(Json.java:69)\r\n\tat org.openqa.selenium.json.Json.toType(Json.java:55)\r\n\tat org.openqa.selenium.json.Json.toType(Json.java:50)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:112)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:131)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:144)\r\n\tat com.vytrack.utilities.Driver.get(Driver.java:71)\r\n\tat com.vytrack.step_definitions.LoginStepDefs.the_user_is_on_the_login_page(LoginStepDefs.java:25)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:567)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:26)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:20)\r\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:57)\r\n\tat cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)\r\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:65)\r\n\tat cucumber.runner.TestStep.run(TestStep.java:50)\r\n\tat cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)\r\n\tat cucumber.runner.TestCase.run(TestCase.java:46)\r\n\tat cucumber.runner.Runner.runPickle(Runner.java:50)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:68)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:23)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:144)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:65)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:174)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:230)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)\r\n",
+              "duration": 12099000,
+              "status": "failed"
+            },
+            "line": 5,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-02-27T18:54:18.436Z",
+        "before": [
+          {
+            "result": {
+              "duration": 114000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 9,
         "name": "Login as a driver",
         "description": "",
         "id": "users-should-be-able-to-login;login-as-a-driver",
         "after": [
           {
             "result": {
-              "duration": 39900,
-              "status": "passed"
+              "error_message": "org.openqa.selenium.WebDriverException: Unable to parse remote response: \u003c!DOCTYPE html\u003e\n\u003chtml lang\u003d\"en\"\u003e\n\u003chead\u003e\n  \u003cmeta charset\u003d\"UTF-8\"\u003e\n  \u003clink rel\u003d\"stylesheet\" type\u003d\"text/css\" href\u003d\"/assets/displayhelpservlet.css\" media\u003d\"all\"/\u003e\n  \u003clink href\u003d\"/assets/favicon.ico\" rel\u003d\"icon\" type\u003d\"image/x-icon\" /\u003e\n  \u003cscript src\u003d\"/assets/jquery-3.1.1.min.js\" type\u003d\"text/javascript\"\u003e\u003c/script\u003e\n  \u003cscript src\u003d\"/assets/displayhelpservlet.js\" type\u003d\"text/javascript\"\u003e\u003c/script\u003e\n  \u003cscript type\u003d\"text/javascript\"\u003e\n    var json \u003d Object.freeze(\u0027{\"consoleLink\": \"\\u002fgrid\\u002fconsole\",\"type\": \"Grid Hub\",\"class\": \"org.openqa.grid.web.servlet.DisplayHelpHandler$DisplayHelpServletConfig\",\"version\": \"3.141.59\"}\u0027);\n  \u003c/script\u003e\n\u003c/head\u003e\n\u003cbody\u003e\n\n\u003cdiv id\u003d\"content\"\u003e\n  \u003cdiv id\u003d\"help-heading\"\u003e\n    \u003ch1\u003e\u003cspan id\u003d\"logo\"\u003e\u003c/span\u003e\u003c/h1\u003e\n    \u003ch2\u003eSelenium \u003cspan class\u003d\"se-type\"\u003e\u003c/span\u003e\u0026nbsp;v.\u003cspan class\u003d\"se-version\"\u003e\u003c/span\u003e\u003c/h2\u003e\n  \u003c/div\u003e\n\n  \u003cdiv id\u003d\"content-body\"\u003e\n    \u003cp\u003e\n      Whoops! The URL specified routes to this help page.\n    \u003c/p\u003e\n    \u003cp\u003e\n      For more information about Selenium \u003cspan class\u003d\"se-type\"\u003e\u003c/span\u003e please see the\n      \u003ca class\u003d\"se-docs\"\u003edocs\u003c/a\u003e and/or visit the \u003ca class\u003d\"se-wiki\"\u003ewiki\u003c/a\u003e.\n      \u003cspan id\u003d\"console-item\"\u003e\n        Or perhaps you are looking for the Selenium \u003cspan class\u003d\"se-type\"\u003e\u003c/span\u003e \u003ca class\u003d\"se-console\"\u003econsole\u003c/a\u003e.\n      \u003c/span\u003e\n    \u003c/p\u003e\n    \u003cp\u003e\n      Happy Testing!\n    \u003c/p\u003e\n  \u003c/div\u003e\n\n  \u003cdiv\u003e\n    \u003cfooter id\u003d\"help-footer\"\u003e\n      Selenium is made possible through the efforts of our open source community, contributions from\n      these \u003ca href\u003d\"https://github.com/SeleniumHQ/selenium/blob/master/AUTHORS\"\u003epeople\u003c/a\u003e, and our\n      \u003ca href\u003d\"http://www.seleniumhq.org/sponsors/\"\u003esponsors\u003c/a\u003e.\n   \u003c/footer\u003e\n  \u003c/div\u003e\n \u003c/div\u003e\n\n\u003c/body\u003e\n\u003c/html\u003e\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:115)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:131)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:144)\r\n\tat com.vytrack.utilities.Driver.get(Driver.java:71)\r\n\tat com.vytrack.step_definitions.Hooks.tearDown(Hooks.java:26)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:567)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:26)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:20)\r\n\tat cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:65)\r\n\tat cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)\r\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:65)\r\n\tat cucumber.runner.TestStep.run(TestStep.java:50)\r\n\tat cucumber.runner.TestCase.run(TestCase.java:50)\r\n\tat cucumber.runner.Runner.runPickle(Runner.java:50)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:68)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:23)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:144)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:65)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:174)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:230)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)\r\nCaused by: org.openqa.selenium.json.JsonException: Unable to determine type from: \u003c. Last 1 characters read: \u003c\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-AKL693R\u0027, ip: \u0027192.168.0.105\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002712.0.2\u0027\nDriver info: driver.version: Driver\r\n\tat org.openqa.selenium.json.JsonInput.peek(JsonInput.java:122)\r\n\tat org.openqa.selenium.json.JsonTypeCoercer.lambda$null$6(JsonTypeCoercer.java:140)\r\n\tat org.openqa.selenium.json.JsonTypeCoercer.coerce(JsonTypeCoercer.java:126)\r\n\tat org.openqa.selenium.json.Json.toType(Json.java:69)\r\n\tat org.openqa.selenium.json.Json.toType(Json.java:55)\r\n\tat org.openqa.selenium.json.Json.toType(Json.java:50)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:112)\r\n\t... 44 more\r\n",
+              "duration": 10641500,
+              "status": "failed"
             },
             "match": {
-              "location": "Hooks.tearDown()"
+              "location": "Hooks.tearDown(Scenario)"
             }
           }
         ],
@@ -35,34 +265,22 @@
         "steps": [
           {
             "result": {
-              "duration": 366000,
-              "status": "passed"
+              "duration": 1153900,
+              "status": "skipped"
             },
-            "line": 6,
-            "name": "the user is on the login page",
+            "line": 10,
+            "name": "the user enter the driver information",
             "match": {
-              "location": "LoginStepDefs.the_user_is_on_the_login_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 48100,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "the users enter the driver info",
-            "match": {
-              "location": "LoginStepDefs.the_users_enter_the_driver_info()"
+              "location": "LoginStepDefs.the_user_enter_the_driver_information()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 35100,
-              "status": "passed"
+              "duration": 320500,
+              "status": "skipped"
             },
-            "line": 8,
+            "line": 11,
             "name": "the user should be able to login",
             "match": {
               "location": "LoginStepDefs.the_user_should_be_able_to_login()"
@@ -73,21 +291,61 @@
         "tags": [
           {
             "name": "@login"
+          },
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@wip"
           },
           {
             "name": "@driver"
           },
           {
             "name": "@VYT-123"
+          },
+          {
+            "name": "@smoke"
           }
         ]
       },
       {
-        "start_timestamp": "2020-01-27T08:00:53.923Z",
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.WebDriverException: Unable to parse remote response: \u003c!DOCTYPE html\u003e\n\u003chtml lang\u003d\"en\"\u003e\n\u003chead\u003e\n  \u003cmeta charset\u003d\"UTF-8\"\u003e\n  \u003clink rel\u003d\"stylesheet\" type\u003d\"text/css\" href\u003d\"/assets/displayhelpservlet.css\" media\u003d\"all\"/\u003e\n  \u003clink href\u003d\"/assets/favicon.ico\" rel\u003d\"icon\" type\u003d\"image/x-icon\" /\u003e\n  \u003cscript src\u003d\"/assets/jquery-3.1.1.min.js\" type\u003d\"text/javascript\"\u003e\u003c/script\u003e\n  \u003cscript src\u003d\"/assets/displayhelpservlet.js\" type\u003d\"text/javascript\"\u003e\u003c/script\u003e\n  \u003cscript type\u003d\"text/javascript\"\u003e\n    var json \u003d Object.freeze(\u0027{\"consoleLink\": \"\\u002fgrid\\u002fconsole\",\"type\": \"Grid Hub\",\"class\": \"org.openqa.grid.web.servlet.DisplayHelpHandler$DisplayHelpServletConfig\",\"version\": \"3.141.59\"}\u0027);\n  \u003c/script\u003e\n\u003c/head\u003e\n\u003cbody\u003e\n\n\u003cdiv id\u003d\"content\"\u003e\n  \u003cdiv id\u003d\"help-heading\"\u003e\n    \u003ch1\u003e\u003cspan id\u003d\"logo\"\u003e\u003c/span\u003e\u003c/h1\u003e\n    \u003ch2\u003eSelenium \u003cspan class\u003d\"se-type\"\u003e\u003c/span\u003e\u0026nbsp;v.\u003cspan class\u003d\"se-version\"\u003e\u003c/span\u003e\u003c/h2\u003e\n  \u003c/div\u003e\n\n  \u003cdiv id\u003d\"content-body\"\u003e\n    \u003cp\u003e\n      Whoops! The URL specified routes to this help page.\n    \u003c/p\u003e\n    \u003cp\u003e\n      For more information about Selenium \u003cspan class\u003d\"se-type\"\u003e\u003c/span\u003e please see the\n      \u003ca class\u003d\"se-docs\"\u003edocs\u003c/a\u003e and/or visit the \u003ca class\u003d\"se-wiki\"\u003ewiki\u003c/a\u003e.\n      \u003cspan id\u003d\"console-item\"\u003e\n        Or perhaps you are looking for the Selenium \u003cspan class\u003d\"se-type\"\u003e\u003c/span\u003e \u003ca class\u003d\"se-console\"\u003econsole\u003c/a\u003e.\n      \u003c/span\u003e\n    \u003c/p\u003e\n    \u003cp\u003e\n      Happy Testing!\n    \u003c/p\u003e\n  \u003c/div\u003e\n\n  \u003cdiv\u003e\n    \u003cfooter id\u003d\"help-footer\"\u003e\n      Selenium is made possible through the efforts of our open source community, contributions from\n      these \u003ca href\u003d\"https://github.com/SeleniumHQ/selenium/blob/master/AUTHORS\"\u003epeople\u003c/a\u003e, and our\n      \u003ca href\u003d\"http://www.seleniumhq.org/sponsors/\"\u003esponsors\u003c/a\u003e.\n   \u003c/footer\u003e\n  \u003c/div\u003e\n \u003c/div\u003e\n\n\u003c/body\u003e\n\u003c/html\u003e\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:115)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:131)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:144)\r\n\tat com.vytrack.utilities.Driver.get(Driver.java:71)\r\n\tat com.vytrack.step_definitions.LoginStepDefs.the_user_is_on_the_login_page(LoginStepDefs.java:25)\r\n\tat ✽.the user is on the login page(file:src/test/resources/features/Login.feature:5)\r\nCaused by: org.openqa.selenium.json.JsonException: Unable to determine type from: \u003c. Last 1 characters read: \u003c\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-AKL693R\u0027, ip: \u0027192.168.0.105\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002712.0.2\u0027\nDriver info: driver.version: Driver\r\n\tat org.openqa.selenium.json.JsonInput.peek(JsonInput.java:122)\r\n\tat org.openqa.selenium.json.JsonTypeCoercer.lambda$null$6(JsonTypeCoercer.java:140)\r\n\tat org.openqa.selenium.json.JsonTypeCoercer.coerce(JsonTypeCoercer.java:126)\r\n\tat org.openqa.selenium.json.Json.toType(Json.java:69)\r\n\tat org.openqa.selenium.json.Json.toType(Json.java:55)\r\n\tat org.openqa.selenium.json.Json.toType(Json.java:50)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:112)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:131)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:144)\r\n\tat com.vytrack.utilities.Driver.get(Driver.java:71)\r\n\tat com.vytrack.step_definitions.LoginStepDefs.the_user_is_on_the_login_page(LoginStepDefs.java:25)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:567)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:26)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:20)\r\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:57)\r\n\tat cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)\r\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:65)\r\n\tat cucumber.runner.TestStep.run(TestStep.java:50)\r\n\tat cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)\r\n\tat cucumber.runner.TestCase.run(TestCase.java:46)\r\n\tat cucumber.runner.Runner.runPickle(Runner.java:50)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:68)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:23)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:144)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:65)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:174)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:230)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)\r\n",
+              "duration": 12543700,
+              "status": "failed"
+            },
+            "line": 5,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-02-27T18:54:18.486Z",
         "before": [
           {
             "result": {
-              "duration": 71500,
+              "duration": 130500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUpDatabase()"
+            }
+          },
+          {
+            "result": {
+              "duration": 81800,
               "status": "passed"
             },
             "match": {
@@ -95,18 +353,28 @@
             }
           }
         ],
-        "line": 13,
-        "name": "Login as a Sales Manager",
+        "line": 15,
+        "name": "Login as a sales manager",
         "description": "",
         "id": "users-should-be-able-to-login;login-as-a-sales-manager",
         "after": [
           {
             "result": {
-              "duration": 27000,
+              "duration": 88900,
               "status": "passed"
             },
             "match": {
-              "location": "Hooks.tearDown()"
+              "location": "Hooks.tearDownDatabase()"
+            }
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.WebDriverException: Unable to parse remote response: \u003c!DOCTYPE html\u003e\n\u003chtml lang\u003d\"en\"\u003e\n\u003chead\u003e\n  \u003cmeta charset\u003d\"UTF-8\"\u003e\n  \u003clink rel\u003d\"stylesheet\" type\u003d\"text/css\" href\u003d\"/assets/displayhelpservlet.css\" media\u003d\"all\"/\u003e\n  \u003clink href\u003d\"/assets/favicon.ico\" rel\u003d\"icon\" type\u003d\"image/x-icon\" /\u003e\n  \u003cscript src\u003d\"/assets/jquery-3.1.1.min.js\" type\u003d\"text/javascript\"\u003e\u003c/script\u003e\n  \u003cscript src\u003d\"/assets/displayhelpservlet.js\" type\u003d\"text/javascript\"\u003e\u003c/script\u003e\n  \u003cscript type\u003d\"text/javascript\"\u003e\n    var json \u003d Object.freeze(\u0027{\"consoleLink\": \"\\u002fgrid\\u002fconsole\",\"type\": \"Grid Hub\",\"class\": \"org.openqa.grid.web.servlet.DisplayHelpHandler$DisplayHelpServletConfig\",\"version\": \"3.141.59\"}\u0027);\n  \u003c/script\u003e\n\u003c/head\u003e\n\u003cbody\u003e\n\n\u003cdiv id\u003d\"content\"\u003e\n  \u003cdiv id\u003d\"help-heading\"\u003e\n    \u003ch1\u003e\u003cspan id\u003d\"logo\"\u003e\u003c/span\u003e\u003c/h1\u003e\n    \u003ch2\u003eSelenium \u003cspan class\u003d\"se-type\"\u003e\u003c/span\u003e\u0026nbsp;v.\u003cspan class\u003d\"se-version\"\u003e\u003c/span\u003e\u003c/h2\u003e\n  \u003c/div\u003e\n\n  \u003cdiv id\u003d\"content-body\"\u003e\n    \u003cp\u003e\n      Whoops! The URL specified routes to this help page.\n    \u003c/p\u003e\n    \u003cp\u003e\n      For more information about Selenium \u003cspan class\u003d\"se-type\"\u003e\u003c/span\u003e please see the\n      \u003ca class\u003d\"se-docs\"\u003edocs\u003c/a\u003e and/or visit the \u003ca class\u003d\"se-wiki\"\u003ewiki\u003c/a\u003e.\n      \u003cspan id\u003d\"console-item\"\u003e\n        Or perhaps you are looking for the Selenium \u003cspan class\u003d\"se-type\"\u003e\u003c/span\u003e \u003ca class\u003d\"se-console\"\u003econsole\u003c/a\u003e.\n      \u003c/span\u003e\n    \u003c/p\u003e\n    \u003cp\u003e\n      Happy Testing!\n    \u003c/p\u003e\n  \u003c/div\u003e\n\n  \u003cdiv\u003e\n    \u003cfooter id\u003d\"help-footer\"\u003e\n      Selenium is made possible through the efforts of our open source community, contributions from\n      these \u003ca href\u003d\"https://github.com/SeleniumHQ/selenium/blob/master/AUTHORS\"\u003epeople\u003c/a\u003e, and our\n      \u003ca href\u003d\"http://www.seleniumhq.org/sponsors/\"\u003esponsors\u003c/a\u003e.\n   \u003c/footer\u003e\n  \u003c/div\u003e\n \u003c/div\u003e\n\n\u003c/body\u003e\n\u003c/html\u003e\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:115)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:131)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:144)\r\n\tat com.vytrack.utilities.Driver.get(Driver.java:71)\r\n\tat com.vytrack.step_definitions.Hooks.tearDown(Hooks.java:26)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:567)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:26)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:20)\r\n\tat cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:65)\r\n\tat cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)\r\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:65)\r\n\tat cucumber.runner.TestStep.run(TestStep.java:50)\r\n\tat cucumber.runner.TestCase.run(TestCase.java:50)\r\n\tat cucumber.runner.Runner.runPickle(Runner.java:50)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:68)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:23)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:144)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:65)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:174)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:230)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)\r\nCaused by: org.openqa.selenium.json.JsonException: Unable to determine type from: \u003c. Last 1 characters read: \u003c\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-AKL693R\u0027, ip: \u0027192.168.0.105\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002712.0.2\u0027\nDriver info: driver.version: Driver\r\n\tat org.openqa.selenium.json.JsonInput.peek(JsonInput.java:122)\r\n\tat org.openqa.selenium.json.JsonTypeCoercer.lambda$null$6(JsonTypeCoercer.java:140)\r\n\tat org.openqa.selenium.json.JsonTypeCoercer.coerce(JsonTypeCoercer.java:126)\r\n\tat org.openqa.selenium.json.Json.toType(Json.java:69)\r\n\tat org.openqa.selenium.json.Json.toType(Json.java:55)\r\n\tat org.openqa.selenium.json.Json.toType(Json.java:50)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:112)\r\n\t... 44 more\r\n",
+              "duration": 11028400,
+              "status": "failed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
             }
           }
         ],
@@ -115,34 +383,22 @@
         "steps": [
           {
             "result": {
-              "duration": 48400,
-              "status": "passed"
+              "duration": 1259100,
+              "status": "skipped"
             },
-            "line": 14,
-            "name": "the user is on the login page",
+            "line": 16,
+            "name": "the user enter the sales manager information",
             "match": {
-              "location": "LoginStepDefs.the_user_is_on_the_login_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 48400,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "the user enters the sales manager info",
-            "match": {
-              "location": "LoginStepDefs.the_user_enters_the_sales_manager_info()"
+              "location": "LoginStepDefs.the_user_enter_the_sales_manager_information()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 29200,
-              "status": "passed"
+              "duration": 346500,
+              "status": "skipped"
             },
-            "line": 16,
+            "line": 17,
             "name": "the user should be able to login",
             "match": {
               "location": "LoginStepDefs.the_user_should_be_able_to_login()"
@@ -153,21 +409,64 @@
         "tags": [
           {
             "name": "@login"
+          },
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@wip"
           },
           {
             "name": "@sales_manager"
           },
           {
             "name": "@VYT-123"
+          },
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@db"
           }
         ]
       },
       {
-        "start_timestamp": "2020-01-27T08:00:53.924Z",
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.WebDriverException: Unable to parse remote response: \u003c!DOCTYPE html\u003e\n\u003chtml lang\u003d\"en\"\u003e\n\u003chead\u003e\n  \u003cmeta charset\u003d\"UTF-8\"\u003e\n  \u003clink rel\u003d\"stylesheet\" type\u003d\"text/css\" href\u003d\"/assets/displayhelpservlet.css\" media\u003d\"all\"/\u003e\n  \u003clink href\u003d\"/assets/favicon.ico\" rel\u003d\"icon\" type\u003d\"image/x-icon\" /\u003e\n  \u003cscript src\u003d\"/assets/jquery-3.1.1.min.js\" type\u003d\"text/javascript\"\u003e\u003c/script\u003e\n  \u003cscript src\u003d\"/assets/displayhelpservlet.js\" type\u003d\"text/javascript\"\u003e\u003c/script\u003e\n  \u003cscript type\u003d\"text/javascript\"\u003e\n    var json \u003d Object.freeze(\u0027{\"consoleLink\": \"\\u002fgrid\\u002fconsole\",\"type\": \"Grid Hub\",\"class\": \"org.openqa.grid.web.servlet.DisplayHelpHandler$DisplayHelpServletConfig\",\"version\": \"3.141.59\"}\u0027);\n  \u003c/script\u003e\n\u003c/head\u003e\n\u003cbody\u003e\n\n\u003cdiv id\u003d\"content\"\u003e\n  \u003cdiv id\u003d\"help-heading\"\u003e\n    \u003ch1\u003e\u003cspan id\u003d\"logo\"\u003e\u003c/span\u003e\u003c/h1\u003e\n    \u003ch2\u003eSelenium \u003cspan class\u003d\"se-type\"\u003e\u003c/span\u003e\u0026nbsp;v.\u003cspan class\u003d\"se-version\"\u003e\u003c/span\u003e\u003c/h2\u003e\n  \u003c/div\u003e\n\n  \u003cdiv id\u003d\"content-body\"\u003e\n    \u003cp\u003e\n      Whoops! The URL specified routes to this help page.\n    \u003c/p\u003e\n    \u003cp\u003e\n      For more information about Selenium \u003cspan class\u003d\"se-type\"\u003e\u003c/span\u003e please see the\n      \u003ca class\u003d\"se-docs\"\u003edocs\u003c/a\u003e and/or visit the \u003ca class\u003d\"se-wiki\"\u003ewiki\u003c/a\u003e.\n      \u003cspan id\u003d\"console-item\"\u003e\n        Or perhaps you are looking for the Selenium \u003cspan class\u003d\"se-type\"\u003e\u003c/span\u003e \u003ca class\u003d\"se-console\"\u003econsole\u003c/a\u003e.\n      \u003c/span\u003e\n    \u003c/p\u003e\n    \u003cp\u003e\n      Happy Testing!\n    \u003c/p\u003e\n  \u003c/div\u003e\n\n  \u003cdiv\u003e\n    \u003cfooter id\u003d\"help-footer\"\u003e\n      Selenium is made possible through the efforts of our open source community, contributions from\n      these \u003ca href\u003d\"https://github.com/SeleniumHQ/selenium/blob/master/AUTHORS\"\u003epeople\u003c/a\u003e, and our\n      \u003ca href\u003d\"http://www.seleniumhq.org/sponsors/\"\u003esponsors\u003c/a\u003e.\n   \u003c/footer\u003e\n  \u003c/div\u003e\n \u003c/div\u003e\n\n\u003c/body\u003e\n\u003c/html\u003e\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:115)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:131)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:144)\r\n\tat com.vytrack.utilities.Driver.get(Driver.java:71)\r\n\tat com.vytrack.step_definitions.LoginStepDefs.the_user_is_on_the_login_page(LoginStepDefs.java:25)\r\n\tat ✽.the user is on the login page(file:src/test/resources/features/Login.feature:5)\r\nCaused by: org.openqa.selenium.json.JsonException: Unable to determine type from: \u003c. Last 1 characters read: \u003c\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-AKL693R\u0027, ip: \u0027192.168.0.105\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002712.0.2\u0027\nDriver info: driver.version: Driver\r\n\tat org.openqa.selenium.json.JsonInput.peek(JsonInput.java:122)\r\n\tat org.openqa.selenium.json.JsonTypeCoercer.lambda$null$6(JsonTypeCoercer.java:140)\r\n\tat org.openqa.selenium.json.JsonTypeCoercer.coerce(JsonTypeCoercer.java:126)\r\n\tat org.openqa.selenium.json.Json.toType(Json.java:69)\r\n\tat org.openqa.selenium.json.Json.toType(Json.java:55)\r\n\tat org.openqa.selenium.json.Json.toType(Json.java:50)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:112)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:131)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:144)\r\n\tat com.vytrack.utilities.Driver.get(Driver.java:71)\r\n\tat com.vytrack.step_definitions.LoginStepDefs.the_user_is_on_the_login_page(LoginStepDefs.java:25)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:567)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:26)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:20)\r\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:57)\r\n\tat cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)\r\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:65)\r\n\tat cucumber.runner.TestStep.run(TestStep.java:50)\r\n\tat cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)\r\n\tat cucumber.runner.TestCase.run(TestCase.java:46)\r\n\tat cucumber.runner.Runner.runPickle(Runner.java:50)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:68)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:23)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:144)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:65)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:174)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:230)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)\r\n",
+              "duration": 12425000,
+              "status": "failed"
+            },
+            "line": 5,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-02-27T18:54:18.530Z",
         "before": [
           {
             "result": {
-              "duration": 75600,
+              "duration": 107300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUpDatabase()"
+            }
+          },
+          {
+            "result": {
+              "duration": 47500,
               "status": "passed"
             },
             "match": {
@@ -175,27 +474,28 @@
             }
           }
         ],
-        "line": 19,
+        "line": 22,
         "name": "Login as a store manager",
         "description": "",
         "id": "users-should-be-able-to-login;login-as-a-store-manager",
         "after": [
           {
             "result": {
-              "duration": 45800,
+              "duration": 88300,
               "status": "passed"
             },
             "match": {
-              "location": "Hooks.tearDown()"
+              "location": "Hooks.tearDownDatabase()"
             }
           },
           {
             "result": {
-              "duration": 64100,
-              "status": "passed"
+              "error_message": "org.openqa.selenium.WebDriverException: Unable to parse remote response: \u003c!DOCTYPE html\u003e\n\u003chtml lang\u003d\"en\"\u003e\n\u003chead\u003e\n  \u003cmeta charset\u003d\"UTF-8\"\u003e\n  \u003clink rel\u003d\"stylesheet\" type\u003d\"text/css\" href\u003d\"/assets/displayhelpservlet.css\" media\u003d\"all\"/\u003e\n  \u003clink href\u003d\"/assets/favicon.ico\" rel\u003d\"icon\" type\u003d\"image/x-icon\" /\u003e\n  \u003cscript src\u003d\"/assets/jquery-3.1.1.min.js\" type\u003d\"text/javascript\"\u003e\u003c/script\u003e\n  \u003cscript src\u003d\"/assets/displayhelpservlet.js\" type\u003d\"text/javascript\"\u003e\u003c/script\u003e\n  \u003cscript type\u003d\"text/javascript\"\u003e\n    var json \u003d Object.freeze(\u0027{\"consoleLink\": \"\\u002fgrid\\u002fconsole\",\"type\": \"Grid Hub\",\"class\": \"org.openqa.grid.web.servlet.DisplayHelpHandler$DisplayHelpServletConfig\",\"version\": \"3.141.59\"}\u0027);\n  \u003c/script\u003e\n\u003c/head\u003e\n\u003cbody\u003e\n\n\u003cdiv id\u003d\"content\"\u003e\n  \u003cdiv id\u003d\"help-heading\"\u003e\n    \u003ch1\u003e\u003cspan id\u003d\"logo\"\u003e\u003c/span\u003e\u003c/h1\u003e\n    \u003ch2\u003eSelenium \u003cspan class\u003d\"se-type\"\u003e\u003c/span\u003e\u0026nbsp;v.\u003cspan class\u003d\"se-version\"\u003e\u003c/span\u003e\u003c/h2\u003e\n  \u003c/div\u003e\n\n  \u003cdiv id\u003d\"content-body\"\u003e\n    \u003cp\u003e\n      Whoops! The URL specified routes to this help page.\n    \u003c/p\u003e\n    \u003cp\u003e\n      For more information about Selenium \u003cspan class\u003d\"se-type\"\u003e\u003c/span\u003e please see the\n      \u003ca class\u003d\"se-docs\"\u003edocs\u003c/a\u003e and/or visit the \u003ca class\u003d\"se-wiki\"\u003ewiki\u003c/a\u003e.\n      \u003cspan id\u003d\"console-item\"\u003e\n        Or perhaps you are looking for the Selenium \u003cspan class\u003d\"se-type\"\u003e\u003c/span\u003e \u003ca class\u003d\"se-console\"\u003econsole\u003c/a\u003e.\n      \u003c/span\u003e\n    \u003c/p\u003e\n    \u003cp\u003e\n      Happy Testing!\n    \u003c/p\u003e\n  \u003c/div\u003e\n\n  \u003cdiv\u003e\n    \u003cfooter id\u003d\"help-footer\"\u003e\n      Selenium is made possible through the efforts of our open source community, contributions from\n      these \u003ca href\u003d\"https://github.com/SeleniumHQ/selenium/blob/master/AUTHORS\"\u003epeople\u003c/a\u003e, and our\n      \u003ca href\u003d\"http://www.seleniumhq.org/sponsors/\"\u003esponsors\u003c/a\u003e.\n   \u003c/footer\u003e\n  \u003c/div\u003e\n \u003c/div\u003e\n\n\u003c/body\u003e\n\u003c/html\u003e\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:115)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:131)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:144)\r\n\tat com.vytrack.utilities.Driver.get(Driver.java:71)\r\n\tat com.vytrack.step_definitions.Hooks.tearDown(Hooks.java:26)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:567)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:26)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:20)\r\n\tat cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:65)\r\n\tat cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)\r\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:65)\r\n\tat cucumber.runner.TestStep.run(TestStep.java:50)\r\n\tat cucumber.runner.TestCase.run(TestCase.java:50)\r\n\tat cucumber.runner.Runner.runPickle(Runner.java:50)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:68)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:23)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:144)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:65)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:174)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:230)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)\r\nCaused by: org.openqa.selenium.json.JsonException: Unable to determine type from: \u003c. Last 1 characters read: \u003c\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-AKL693R\u0027, ip: \u0027192.168.0.105\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002712.0.2\u0027\nDriver info: driver.version: Driver\r\n\tat org.openqa.selenium.json.JsonInput.peek(JsonInput.java:122)\r\n\tat org.openqa.selenium.json.JsonTypeCoercer.lambda$null$6(JsonTypeCoercer.java:140)\r\n\tat org.openqa.selenium.json.JsonTypeCoercer.coerce(JsonTypeCoercer.java:126)\r\n\tat org.openqa.selenium.json.Json.toType(Json.java:69)\r\n\tat org.openqa.selenium.json.Json.toType(Json.java:55)\r\n\tat org.openqa.selenium.json.Json.toType(Json.java:50)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:112)\r\n\t... 44 more\r\n",
+              "duration": 12913300,
+              "status": "failed"
             },
             "match": {
-              "location": "Hooks.tearDownStoreManager()"
+              "location": "Hooks.tearDown(Scenario)"
             }
           }
         ],
@@ -204,34 +504,22 @@
         "steps": [
           {
             "result": {
-              "duration": 77300,
-              "status": "passed"
+              "duration": 1613900,
+              "status": "skipped"
             },
-            "line": 20,
-            "name": "the user is on the login page",
+            "line": 23,
+            "name": "the user enter the store manager information",
             "match": {
-              "location": "LoginStepDefs.the_user_is_on_the_login_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 67400,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "the user enters the store manager info",
-            "match": {
-              "location": "LoginStepDefs.the_user_enters_the_store_manager_info()"
+              "location": "LoginStepDefs.the_user_enter_the_store_manager_information()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 50600,
-              "status": "passed"
+              "duration": 399600,
+              "status": "skipped"
             },
-            "line": 22,
+            "line": 24,
             "name": "the user should be able to login",
             "match": {
               "location": "LoginStepDefs.the_user_should_be_able_to_login()"
@@ -244,10 +532,16 @@
             "name": "@login"
           },
           {
+            "name": "@smoke"
+          },
+          {
             "name": "@store_manager"
           },
           {
-            "name": "@VYT-123"
+            "name": "@db"
+          },
+          {
+            "name": "@wip"
           }
         ]
       }
@@ -264,6 +558,14 @@
         "location": {
           "line": 1,
           "column": 1
+        }
+      },
+      {
+        "name": "@smoke",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 8
         }
       }
     ]

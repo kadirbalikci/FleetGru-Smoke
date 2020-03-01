@@ -1,22 +1,24 @@
-@login
+@login @smoke
 Feature: Users should be able to login
-  @driver @VYT-123
+
+  Background:
+    Given the user is on the login page
+
+    @wip
+  @driver @VYT-123 @smoke
   Scenario: Login as a driver
-    #each Scenario is like a test case
-    Given the user is on the login page
-    When the users enter the driver info
+    When the user enter the driver information
     Then the user should be able to login
 
-    #hashtag is comment
-
-  @sales_manager @VYT-123
-  Scenario: Login as a Sales Manager
-    Given the user is on the login page
-    When the user enters the sales manager info
+  @wip
+  @sales_manager @VYT-123 @smoke @db
+  Scenario: Login as a sales manager
+    When the user enter the sales manager information
     Then the user should be able to login
 
-    @store_manager @VYT-123
-    Scenario: Login as a store manager
-      Given the user is on the login page
-      When the user enters the store manager info
-      Then the user should be able to login
+
+  @store_manager @db
+  @wip
+  Scenario: Login as a store manager
+    When the user enter the store manager information
+    Then the user should be able to login

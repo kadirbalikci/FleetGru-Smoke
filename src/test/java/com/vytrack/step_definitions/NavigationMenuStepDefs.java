@@ -1,31 +1,68 @@
 package com.vytrack.step_definitions;
 
-
+import com.vytrack.pages.ContactsPage;
+import com.vytrack.pages.DashboardPage;
 import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+import org.junit.Assert;
 
 public class NavigationMenuStepDefs {
-    @Then("go to Fleet -> Vehicles module")
-    public void go_to_Fleet_Vehicles_module() {
-        System.out.println("navigate to vehicles module");
+
+
+    @When("the user navigates to Fleet, Vehicles")
+    public void the_user_navigates_to_Fleet_Vehicles() {
+        System.out.println("Navigate to Fleet Vehicles");
     }
-    @Then("compare vehicle urls")
-    public void compare_vehicle_urls() {
-        System.out.println("assert the vehicle urls");
+
+
+
+    @When("the user navigates Marketing Campaigns")
+    public void the_user_navigates_Marketing_Campaigns() {
+        System.out.println("Navigate to Marketing Campaigns");
+
     }
-    @Then("go to Marketing—> Campaigns module")
-    public void go_to_Marketing_Campaigns_module() {
-        System.out.println("navigate to campaigns module");
+
+
+
+    @When("the user navigates Activities - Calendar events")
+    public void the_user_navigates_Activities_Calendar_events() {
+        System.out.println("Navigate to Activities Calendar events");
+
     }
-    @Then("compare campaigns urls")
-    public void compare_campaigns_urls() {
-        System.out.println("compare campaigns urls");
+
+
+    @Then("the url should be expected Fleet url")
+    public void the_url_should_be_expected_Fleet_url() {
+        System.out.println("Expected ==Actual PASS");
     }
-    @Then("go to Activities—> Calendar Events module")
-    public void go_to_Activities_Calendar_Events_module() {
-        System.out.println("navigate to calendar events module");
+
+    @Then("the url should be expected Campaigns url")
+    public void the_url_should_be_expected_Campaigns_url() {
+        System.out.println("Expected ==Actual PASS");
+
     }
-    @Then("compare calendar events urls")
-    public void compare_calendar_events_urls() {
-        System.out.println("compare calendar events urls");
+
+    @Then("the url should be expected Activities url")
+    public void the_url_should_be_expected_Activities_url() {
+        System.out.println("Expected ==Actual PASS");
+
     }
+
+    @When("the user navigates {string} {string}")
+    public void the_user_navigates(String tab, String module) {
+        new DashboardPage().navigateToModule(tab,module);
+
+    }
+
+    @Then("default page number should be {int}")
+    public void default_page_number_should_be(Integer ePageNumber) {
+        ContactsPage contactsPage = new ContactsPage();
+
+        Integer actualNumber = Integer.parseInt(contactsPage.pageNumber.getAttribute("value"));
+
+        Assert.assertEquals(actualNumber,ePageNumber);
+    }
+
+
+
 }
