@@ -1,6 +1,7 @@
-package com.vytrack.pages;
+package com.La3eb_Web.pages;
 
-import com.vytrack.utilities.Driver;
+import com.La3eb_Web.utilities.Driver;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -11,14 +12,17 @@ public class LoginPage {
         PageFactory.initElements(Driver.get(), this);
     }
 
-    @FindBy(id="prependedInput")
+    @FindBy(name="username")
     public WebElement userName;
 
-    @FindBy(id="prependedInput2")
+    @FindBy(name="password")
     public WebElement password;
 
     @FindBy(name = "_submit")
     public WebElement submit;
+
+    @FindBy(linkText = "Don't have an La3eb account? Create one now.")
+    public WebElement Signup;
 
 
     public void login(String userNameStr, String passwordStr) {

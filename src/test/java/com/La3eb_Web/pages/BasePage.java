@@ -1,7 +1,7 @@
-package com.vytrack.pages;
+package com.La3eb_Web.pages;
 
-import com.vytrack.utilities.BrowserUtils;
-import com.vytrack.utilities.Driver;
+import com.La3eb_Web.utilities.BrowserUtils;
+import com.La3eb_Web.utilities.Driver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -86,7 +86,7 @@ public abstract class  BasePage {
     }
 
     /**
-     * This method will navigate user to the specific module in vytrack application.
+     * This method will navigate user to the specific module in La3eb_Web application.
      * For example: if tab is equals to Activities, and module equals to Calls,
      * Then method will navigate user to this page: http://qa2.vytrack.com/call/
      *

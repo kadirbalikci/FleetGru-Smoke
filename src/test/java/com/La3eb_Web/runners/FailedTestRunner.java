@@ -1,4 +1,4 @@
-package com.vytrack.runners;
+package com.La3eb_Web.runners;
 
 
 import io.cucumber.junit.Cucumber;
@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         features = "@target/rerun.txt",
-        glue = "com/vytrack/step_definitions"
+        glue = "com/La3eb_Web/step_definitions"
 )
 public class FailedTestRunner {
 
